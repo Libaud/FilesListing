@@ -1,0 +1,14 @@
+=============================================
+  CodeTyphon Studio
+  Typhon IDE
+  Package Information file
+=============================================
+
+FilesListing
+
+Version: 0.0 Date: 2024-02-12 09:21
+
+
+
+
+

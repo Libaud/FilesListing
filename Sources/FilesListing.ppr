@@ -1,0 +1,204 @@
+{========================================================================================
+  Program : FilesListing
+
+  Binary : FL
+
+  Features : FilesListing (FL) is an application tool to list files in directory tree and
+             eventually put it in an output file with different format supported.
+             It would be used in conjonction with other tools in command line for example
+             for files treatment.
+
+  Author : Frédéric Libaud
+
+  **************************************************************************************
+  History
+  --------------------------------------------------------------------------------------
+  02/2024 - Project launch
+ ========================================================================================}
+program FilesListing;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}
+  cthreads,
+  {$ENDIF}
+  Classes, SysUtils, CustApp
+  { you can add units after this }
+  , ListFiles, ListFilesUtilities;
+
+{ Application global constants}
+const
+  AGC_NAME                = 'Files Listing';
+  AGC_DESCRIPTION         = 'Application tool to list files in directories tree.';
+
+{ Command line parameters constants}
+const
+  CLP_VERSION             = 'version';
+  CLP_VERSION_SHORT       = 'v';
+  CLP_HELP                = 'help';
+  CLP_HELP_SHORT          = 'h';
+  CLP_PATH                = 'path';
+  CLP_PATH_SHORT          = 'p';
+  CLP_FILTERS             = 'filters';
+  CLP_FILTERS_SHORT       = 'f';
+  CLP_OUTPUT              = 'output';
+  CLP_OUTPUT_SHORT        = 'o';
+  CLP_OUTPUTFORMAT        = 'export';
+  CLP_OUTPUTFORMAT_SHORT  = 'e';
+
+type
+
+  { TFilesListing }
+
+  TFilesListing = class(TCustomApplication)
+      private
+        // Members
+        oSearchFiles: TSearchFiles;
+        // Methods
+        procedure SearchFiles;
+        procedure ShowVersion;
+        procedure ShowUsage;
+        procedure WriteHelp;
+        procedure ShowError(aException: Exception);
+      protected
+        procedure DoRun; override;
+      public
+        constructor Create(TheOwner: TComponent); override;
+        destructor Destroy; override;
+    end;
+
+   { TFilesListing }
+
+{ TFilesListing implementation }
+
+procedure TFilesListing.SearchFiles;
+var
+  _RootPath: string;
+  _iFile: integer;
+begin
+  with oSearchFiles do
+  begin
+    if HasOption(CLP_PATH_SHORT, CLP_PATH) then
+      RootDirectory:= GetOptionValue(CLP_PATH_SHORT, CLP_PATH)
+    else
+    begin
+      GetDir(0, _RootPath);
+      RootDirectory:= _RootPath;
+    end;
+    if HasOption(CLP_FILTERS_SHORT, CLP_FILTERS) then
+      FilesFilters:= SplitInArray(GetOptionValue(CLP_FILTERS_SHORT, CLP_FILTERS), ' ');
+    if HasOption(CLP_OUTPUT_SHORT, CLP_OUTPUT) then
+    begin
+      Output:= GetOptionValue(CLP_OUTPUT_SHORT, CLP_OUTPUT);
+      if HasOption(CLP_OUTPUTFORMAT_SHORT, CLP_OUTPUTFORMAT) then
+        case GetOptionValue(CLP_OUTPUTFORMAT_SHORT, CLP_OUTPUTFORMAT) of
+          'CSV': OutputFormat:= ofCSV;
+          'LIST': OutputFormat:= ofList;
+        end;
+    end;
+    Refresh;
+    if CountOfFiles > 0 then
+      for _iFile:= 0 to CountOfFiles - 1 do
+        WriteLn(Files[_iFile].NameWithPath + #13#10)
+    else
+      WriteLn('No files found !');
+  end;
+end;
+
+procedure TFilesListing.ShowVersion;
+begin
+  WriteLn(AGC_NAME);
+  WriteLb;
+  WriteLn(AGC_DESCRIPTION);
+  Terminate;
+end;
+
+procedure TFilesListing.ShowUsage;
+begin
+  WriteHelp;
+  Terminate;
+end;
+
+procedure TFilesListing.WriteHelp;
+
+  procedure WriteCommandParamHelp(const aCommandShort, aCommand, aCommandHelp: string);
+  begin
+    WriteLn(Format('%s %s %s', [aCommandShort, aCommand, aCommandHelp]))
+  end;
+
+begin
+  { add your help code here }
+  WriteLb;
+  WriteLn('Usage: ', ExtractFileName(ExeName), ' --h or --help');
+  WriteLb;
+  WriteCommandParamHelp(CLP_PATH_SHORT, CLP_PATH, 'Configure base directory for searching files. By default using current path.');
+  WriteCommandParamHelp(CLP_FILTERS_SHORT, CLP_FILTERS, 'Define files extensions. Multiples extensions with space for separator. ');
+  WriteCommandParamHelp(CLP_OUTPUT_SHORT, CLP_OUTPUT, 'Define output file.');
+  WriteCommandParamHelp(CLP_OUTPUTFORMAT_SHORT, CLP_OUTPUTFORMAT, 'Define output file format (List, CSV).');
+  WriteCommandParamHelp(CLP_VERSION_SHORT, CLP_VERSION, 'Show version of Files Listing');
+  Terminate;
+end;
+
+procedure TFilesListing.ShowError(aException: Exception);
+begin
+  WriteLn(Format('An exception was made: %s (%s)', [aException.message, IntToStr(aException.HelpContext)]));
+  Terminate;
+  Exit;
+end;
+
+procedure TFilesListing.DoRun;
+begin
+  try
+    {
+      parse parameters and verify if version is in parameters
+    }
+    if HasOption(CLP_VERSION_SHORT, CLP_VERSION) then
+      ShowVersion
+    else
+      {
+        parse parameters and verify if help is in parameters
+      }
+      if HasOption(CLP_HELP_SHORT, CLP_HELP) then
+        ShowUsage
+      else
+        { add your program here }
+        try
+          { Launch searching files }
+          oSearchFiles:= TSearchFiles.Create;
+          SearchFiles;
+        finally
+          oSearchFiles.Destroy;
+          Terminate;
+        end;
+      // stop program loop
+  except
+    on e: Exception do
+      ShowError(e);
+  end;
+  Terminate;
+end;
+
+constructor TFilesListing.Create(TheOwner: TComponent);
+begin
+  inherited Create(TheOwner);
+  StopOnException:= True;
+end;
+
+destructor TFilesListing.Destroy;
+begin
+  inherited Destroy;
+end;
+
+var
+  Application: TFilesListing;
+
+{$R *.res}
+
+begin
+  Application:= TFilesListing.Create(nil);
+  Application.Title:= AGC_NAME;
+  Application.Run;
+  Application.Free;
+end.
+

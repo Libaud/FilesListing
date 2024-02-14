@@ -1,0 +1,26 @@
+program FilesListingGUI;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}
+  cthreads,
+  {$ENDIF}
+  {$IFDEF HASAMIGA}
+  athreads,
+  {$ENDIF}
+  Interfaces, // this includes the CT adLCL widgetset
+  Forms, Main
+  { you can add units after this };
+
+{$R *.res}
+
+begin
+  RequireDerivedFormResource:=True;
+  Application.Title:='Files Listing';
+  Application.Scaled:=True;
+  Application.Initialize;
+  Application.CreateForm(TMainF, MainF);
+  Application.Run;
+end.
+

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <ManyBuildModesSelection Value="&quot;Linux X64 Debug&quot;,&quot;Windows X64 Debug&quot;,&quot;Linux X64 Valgrind&quot;,&quot;Linux X64 Release&quot;,&quot;Windows X64 Release&quot;"/>
+    <BuildModes Active="Linux X64 Debug"/>
+    <Units>
+      <Unit>
+        <Filename Value="FilesListing.ppr"/>
+        <FRMtype Value="0"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="32"/>
+        <CursorPos X="67" Y="89"/>
+        <UsageCount Value="192"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Common/ListFiles.pas"/>
+        <FRMtype Value="0"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="239"/>
+        <CursorPos Y="271"/>
+        <UsageCount Value="95"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../Bibliotheques Composants/Files Search/Sources/FilesSearching.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="170"/>
+        <CursorPos Y="198"/>
+        <UsageCount Value="88"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/codetyphon/fpcsrc/rtl/objpas/sysutils/filutilh.inc"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="71"/>
+        <CursorPos X="17" Y="89"/>
+        <UsageCount Value="88"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/codetyphon/fpcsrc/rtl/unix/sysutils.pp"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="89"/>
+        <CursorPos X="3" Y="107"/>
+        <UsageCount Value="88"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/codetyphon/fpcsrc/rtl/linux/ptypes.inc"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <UsageCount Value="88"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/codetyphon/fpcsrc/rtl/unix/unixtype.pp"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <CursorPos X="5" Y="29"/>
+        <UsageCount Value="88"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/codetyphon/fpcsrc/packages/fv/src/stddlg.pas"/>
+        <FRMtype Value="0"/>
+        <UnitName Value="StdDlg"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="91"/>
+        <CursorPos X="45" Y="129"/>
+        <UsageCount Value="88"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/codetyphon/fpcsrc/packages/rtl-extra/src/inc/objects.pp"/>
+        <FRMtype Value="0"/>
+        <UnitName Value="Objects"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="437"/>
+        <CursorPos X="4" Y="444"/>
+        <UsageCount Value="88"/>
+      </Unit>
+      <Unit>
+        <Filename Value="FilesListing.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <CursorPos X="3" Y="11"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../Bibliotheques Composants/Utilities/Sources/StringsUtilities.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="555"/>
+        <CursorPos Y="370"/>
+        <UsageCount Value="34"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/codetyphon/fpcsrc/packages/fcl-base/src/custapp.pp"/>
+        <FRMtype Value="0"/>
+        <UnitName Value="CustApp"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="44"/>
+        <CursorPos X="3" Y="36"/>
+        <UsageCount Value="18"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/codetyphon/fpcsrc/rtl/objpas/classes/classesh.inc"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="814"/>
+        <CursorPos X="7" Y="852"/>
+        <UsageCount Value="18"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/codetyphon/fpcsrc/rtl/unix/classes.pp"/>
+        <FRMtype Value="0"/>
+        <UnitName Value="Classes"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <CursorPos X="3" Y="146"/>
+        <UsageCount Value="18"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/codetyphon/typhon/components/BaseUtils/fileutil.pas"/>
+        <FRMtype Value="0"/>
+        <UnitName Value="FileUtil"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="203"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/codetyphon/typhon/components/BaseUtils/lazfileutils.pas"/>
+        <FRMtype Value="0"/>
+        <UnitName Value="LazFileUtils"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="82"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Common/ListFilesUtilities.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="4"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="8"/>
+        <CursorPos X="34" Y="32"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/local/codetyphon/fpcsrc/rtl/objpas/classes/collect.inc"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="13"/>
+        <CursorPos X="35" Y="320"/>
+        <UsageCount Value="13"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../Projets : Externes/jcl-master/thirdparty/PascalPreProcessor/FindFileIter.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="124"/>
+        <CursorPos X="54" Y="150"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../Bibliotheques Composants/Licensing/Tools/Manager/generators.pas"/>
+        <FRMtype Value="0"/>
+        <UnitName Value="Generators"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="550"/>
+        <CursorPos X="34" Y="575"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../Bibliotheques Composants/Utilities/Sources/FilesUtilities.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="63"/>
+        <CursorPos X="40" Y="87"/>
+        <UsageCount Value="9"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="248" TopLine="228"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="250" TopLine="228"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="269" TopLine="234"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="273" TopLine="238"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="250" TopLine="238"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="253" TopLine="238"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="255" TopLine="238"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="257" TopLine="238"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="259" TopLine="238"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="273" TopLine="238"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="250" TopLine="238"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="269" TopLine="238"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="273" TopLine="238"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="249" Column="25" TopLine="240"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="248" Column="59" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="247" Column="6" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="250" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="269" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="250" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="253" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="255" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="257" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="259" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="273" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="247" Column="43" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="250" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="271" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="250" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="271" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="Common/ListFiles.pas"/>
+        <Caret Line="250" TopLine="239"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default">
+        <Mode Name="default">
+          <local>
+            <CommandLineParams Value="--path=&apos;/home/frederic/Developpements/Files Listing [Projet, Open Source]&apos; --filters=&apos;*.ctmpr *.ctpr *.ctpkg&apos;"/>
+          </local>
+        </Mode>
+      </Modes>
+    </RunParams>
+    <HistoryLists>
+      <List Name="LaunchingApplication" Type="File" Count="5">
+        <Item1 Value="/usr/bin/xterm -T &apos;Typhon Run Output&apos; -e $(TargetCmdLine)"/>
+        <Item2 Value="${CmdExe} ${TargetCmdLine}"/>
+        <Item3 Value="&quot;$(Pas2JSBrowser)&quot; &quot;$(Pas2JSProjectURL)&quot;"/>
+        <Item4 Value="$(Pas2JSBrowser) &quot;$(Pas2JSProjectURL)&quot;"/>
+        <Item5 Value="/usr/bin/gnome-terminal -t &apos;Typhon Run Output&apos; -e &apos;$(TargetCmdLine)&apos;"/>
+      </List>
+      <List Name="CommandLineParameters" Count="11">
+        <Item1 Value="--path=&apos;/home/frederic/Developpements/Files Listing [Projet, Open Source]&apos; --filters=&apos;*.ctmpr *.ctpr *.ctpkg&apos;"/>
+        <Item2 Value="--path=&apos;/home/frederic/Developpements/Files Listing [Projet, Open Source]&apos; --filters=&apos;ctmpr ctpr ctpkg&apos;"/>
+        <Item3 Value="--path=&apos;/home/frederic/Developpements/Files Listing [Projet, Open Source]&apos; -filter&apos;ctmpr ctpr ctpkg&apos;"/>
+        <Item4 Value="--path=&apos;/home/frederic/Developpements/Files Listing [Projet, Open Source]&apos; -f&apos;ctmpr ctpr ctpkg&apos;"/>
+        <Item5 Value="--path=&apos;/home/frederic/Developpements/Files Listing [Projet, Open Source]&apos; --f&apos;ctmpr ctpr ctpkg&apos;"/>
+        <Item6 Value="--path=&apos;/home/frederic/Developpements/Files Listing [Projet, Open Source]&apos;"/>
+        <Item7 Value="--path=/home/frederic/Developpements/Files Listing [Projet, Open Source]"/>
+        <Item8 Value="--path=/home/frederic/Developpements/Files Listing [Projet, Open Source]&apos;"/>
+        <Item9 Value="--help"/>
+        <Item10 Value="--p/home/frederic/Developpements/Files Listing [Projet, Open Source]&apos;"/>
+        <Item11 Value="/home/frederic/Developpements/Files Listing [Projet, Open Source]&apos;"/>
+      </List>
+    </HistoryLists>
+  </ProjectSession>
+  <Debugging>
+    <Watches>
+      <Item>
+        <Expression Value="aDirectory"/>
+      </Item>
+      <Item>
+        <Expression Value="_FilesFilters[_iFilter]"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>

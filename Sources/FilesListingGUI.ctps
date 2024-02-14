@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <ManyBuildModesSelection Value="&quot;Linux X64 Debug&quot;,&quot;Windows X64 Debug&quot;,&quot;Linux X64 Valgrind&quot;,&quot;Linux X64 Release&quot;,&quot;Windows X64 Release&quot;"/>
+    <BuildModes Active="Linux X64 Debug"/>
+    <Units>
+      <Unit>
+        <Filename Value="FilesListingGUI.ppr"/>
+        <FRMtype Value="0"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="23"/>
+      </Unit>
+      <Unit>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="19"/>
+        <CursorPos X="3" Y="56"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="FilesListing.ppr"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <CursorPos X="27" Y="28"/>
+        <UsageCount Value="11"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="16">
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="34" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="35" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="36" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="37" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="38" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="39" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="38" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="39" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="45" Column="3" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="21" Column="27" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="22" Column="27" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="23" Column="27" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="54" Column="9" TopLine="14"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="59" Column="3" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="60" Column="3" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="FilesListingGUI/Main.pas"/>
+        <Caret Line="61" Column="3" TopLine="19"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

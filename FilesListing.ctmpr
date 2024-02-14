@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <MultiProject FileVersion="1">
+    <Elements Count="3">
+      <Element0 FileName="Sources/FilesListing.ctpkg"/>
+      <Element1 FileName="Sources/FilesListing.ctpr">
+        <BuildModes Count="1"/>
+        <Mode1 Name="Default"/>
+      </Element1>
+      <Element2 FileName="Sources/FilesListingGUI.ctpr">
+        <BuildModes Count="1"/>
+        <Mode1 Name="Default"/>
+      </Element2>
+    </Elements>
+  </MultiProject>
+</CONFIG>
